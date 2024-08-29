@@ -25,6 +25,7 @@ axios.defaults.headers.common["x-api-key"] = API_KEY;
  *  - Each option should display text equal to the name of the breed.
  * This function should execute immediately.
  */
+
 async function initialLoad() {
   try {
     // Fetching the breeds data from the API
@@ -85,8 +86,10 @@ async function handleBreedSelect() {
     infoDump.innerHTML = ""; // Clear previous information
 
     // Process each object in the response array
+
     images.forEach((imageData) => {
       // Log imageData to inspect its structure
+
       console.log("Image data:", imageData);
 
       const imageUrl = imageData.url;
